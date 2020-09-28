@@ -34,7 +34,7 @@ if question == 0:
   print()
   print(output)
   print()
-  print("Your current score: " + str(score) + "/" str(totalQn))
+  print("Your current score: " + str(score) + "/" + str(totalQn))
   print()
   print()
   
@@ -57,46 +57,39 @@ if question == 1:
   elif answer == "b":
     output = "Wrong. That is the definition for 'scintillating'."
   elif answer == "c":
-    output = "Wrong. Clearly the number 2 in the formulae must mean something?"
+    output = "Wrong. That is the definition for 'sinister'."
   elif answer == "d":
-    output = "Wrong. What's the difference between a molecule and an atom?"
+    output = "Wrong. That is the definition for 'trepidation'."
   else:
     output = "Please choose a, b, c or d only."
 
   print()
   print(output)
   print()
-  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print("Your current score: " + str(score) + "/" + str(totalQn))
   print()
   print()
   
   
+question += 1
 
-counter +=1
-tracker = 0
-
-while tracker !=1:
+if question == 2:
   
-  print("Q"+str(counter)+") "+ "Which represents the electronic configuration of a non-metal?")
-  print("   a) 2,1")
-  print("   b) 2,8,3")
-  print("   c) 2,8,8,2")
-  print("   d) 2,7")
+  print("Question "+str(question + 1)+") "+ "What is a cause of water shortage?")
+  print("   a) Limited land supply")
+  print("   b) Public education")
+  print("   c) External pressure")
+  print("   d) Affluence")
   answer = input("Your answer: ")
   answer = answer.lower()
   if answer == "a":
-    output = "Wrong. Think again - how many electron shells are filled, and which group is this in?"
-    score -=1
+    output = "Wrong. Limited land supply is a cause of housing shortage, not water shortage."
   elif answer == "b":
-    output = "Wrong.  Think again - how many electron shells are filled, and which group is this in?"
-    score -=1
+    output = "Wrong. Public education is a solution to water shortage, not a cause."
   elif answer == "c":
-    output = "Wrong.  Think again - how many electron shells are filled, and which group is this in?"
-    score -=1
-    
+    output = "Wrong. External pressure is a problem that historians face (which will be tested in the next question)."
   elif answer == "d":
     output = "Yes, that's right!"
-    tracker =1
     score +=1
   else:
     output = "Please choose a, b, c or d only."
@@ -104,11 +97,9 @@ while tracker !=1:
   
 
   print()
-  print(output.lower())
+  print(output)
   print()
-  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
-  print()
+  print("Your current score: " + str(score) + "/" + str(totalQn))
   print()
   
 print("End of quiz!")
-  
