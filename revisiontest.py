@@ -5,7 +5,7 @@ print("Title of program: MCQ revision program")
 print()
 
 question = 0
-totalQn = 3
+totalQn = 4
 score = 0
 
 
@@ -70,10 +70,40 @@ if question == 1:
   print()
   print()
   
-  
 question += 1
 
 if question == 2:
+  
+  print("Question "+str(question + 1)+") "+ "21 + y = 26 What is y?")
+  print("   a) 5")
+  print("   b) 47")
+  print("   c) -5")
+  print("   d) 26/21")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "Awesome!"
+    score +=1
+  elif answer == "b":
+    output = "No, its not addition"
+  elif answer == "c":
+    output = "Don't know how you get that but you should move 21 over"
+  elif answer == "d":
+    output = "Good that 21 is on the other side but its not divide. "
+  else:
+    output = "Please choose a, b, c or d only."
+
+  print()
+  print(output)
+  print()
+  print("Your current score: " + str(score) + "/" + str(totalQn))
+  print()
+  print()
+  
+  
+question += 1
+
+if question == 3:
   
   print("Question "+str(question + 1)+") "+ "What is a cause of water shortage?")
   print("   a) Limited land supply")
