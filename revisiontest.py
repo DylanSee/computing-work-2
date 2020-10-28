@@ -2,6 +2,7 @@
 # closing the tab of the code of which i was working on was not the best choice.
 
 print("Title of program: MCQ revision program")
+print("Instructions : Answer with either 'a','b','c' or 'd' depending on which option you think is the correct answer and comments will be given to your choice.")
 print()
 
 question = 0
@@ -130,6 +131,12 @@ if question == 3:
   print(output)
   print()
   print("Your current score: " + str(score) + "/" + str(totalQn))
+  if score == 4:
+    print("Congrats, you got full marks, way to go!")
+  elif score >= 2:
+    print("Congrats, you passed, keep up the good work!")
+  else:
+    print("Continue to improve, you can do it!")
   print()
   
 print("End of quiz!")
